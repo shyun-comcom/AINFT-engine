@@ -3,7 +3,7 @@ const Ain = require('@ainblockchain/ain-js').default;
 const ain = new Ain('https://testnet-api.ainetwork.ai');
 const account = ain.wallet.create(1);
 const myAddress = account[0];
-const CHAT_DB_PATH = "/apps/chat/"
+const CHAT_DB_PATH = "/apps/chat"
 // Set myAddress as the default account
 ain.wallet.setDefaultAccount(myAddress);
 console.log(myAddress)
